@@ -1,0 +1,10 @@
+path: sample_dataset # dataset root dir
+train: images/train # train images (relative to 'path') 893 images
+val: images/val # val images (relative to 'path') 223 images
+test: images/test # test images (relative to 'path')
+
+# Classes
+names:
+  0: earbuds
+  1: toothpick
+  2: dice
