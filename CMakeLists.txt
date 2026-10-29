@@ -45,3 +45,18 @@ target_link_libraries(tensorrt_cpp_demo PRIVATE
     CUDA::cudart
     ${OpenCV_LIBS}
 )
+
+# ====== TensorRT 摄像头实时检测 ======
+
+add_executable(camera src/camera.cpp)
+
+target_include_directories(camera PRIVATE
+    ${TENSORRT_INCLUDE_DIR}
+    ${OpenCV_INCLUDE_DIRS}
+)
+
+target_link_libraries(camera PRIVATE
+    ${TENSORRT_LIBRARY}
+    CUDA::cudart
+    ${OpenCV_LIBS}
+)
